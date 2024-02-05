@@ -10,7 +10,7 @@
 			"format": "png",
 			"desc": "a website to display my projects",
 			"source": "./",
-			"blendMode": "",
+			"blendMode": "multiply",
 			"tech": [
 				{
 					"name": "HTML",
