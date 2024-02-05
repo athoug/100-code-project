@@ -21,6 +21,10 @@ section {
 	max-width: 75em;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* ------------ Header styles ---------------- */
 .header-title {
 	margin: 1em 0;
@@ -112,12 +116,19 @@ section {
 	margin-bottom: 1em;
 }
 
-.icons {
+.icon {
 	width: 1.625em;
 	height: 1.625em;
 	background-color: var(--bg-color);
 	border-radius: 100%;
 	margin-right: 1em;
+}
+
+.icon img {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	mix-blend-mode: multiply;
 }
 
 .project-title {

@@ -1,0 +1,30 @@
+{
+	"projectName": "100 coding project",
+	"developer": "athoug",
+	"startYear": 2024,
+	"startDate": "3 February 2024",
+	"status": "in progress",
+	"projects": [
+		{
+			"title": "This Website",
+			"format": "png",
+			"desc": "a website to display my projects",
+			"source": "./",
+			"blendMode": "",
+			"tech": [
+				{
+					"name": "HTML",
+					"color": "red"
+				},
+				{
+					"name": "CSS",
+					"color": "light-blue"
+				},
+				{
+					"name": "JS",
+					"color": "yellow"
+				}
+			]
+		}
+	]
+}
