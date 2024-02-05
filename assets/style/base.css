@@ -113,6 +113,30 @@ body.dark .checkbox-label {
 	max-width: 48em;
 }
 
+/* ------------- socials section ------------ */
+.socials-container {
+	display: flex;
+}
+
+.social {
+	margin: 0 1em;
+}
+
+.social img {
+	width: 2em;
+	transition: all 0.2s;
+}
+
+body.dark .social img {
+	mix-blend-mode: color-burn;
+	/* mix-blend-mode: overlay; */
+}
+
+.social:hover img {
+	filter: grayscale(1);
+	transform: scale(1.1);
+}
+
 /* ------------ rules section -------------- */
 .rule-cards {
 	display: flex;
