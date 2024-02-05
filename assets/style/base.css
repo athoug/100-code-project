@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
 	/* set the colors of the site */
 	--bg-color: #f6f5f5;
+	--bg-dark: #292c35;
 	--black: #333333;
 	--gray: #bdbcbc;
 	--white: #ffffff;
+	--off-white: #e1e4e5;
+	--dark-black: #111111;
+	--black-blue: #1d2126;
 
 	font-size: 16px;
 }
 
 html {
 	background: var(--bg-color);
-	padding: 2em;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: auto;
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	padding: 2em;
+	width: 100%;
+	height: 100%;
 }
 
 header,
@@ -23,6 +36,67 @@ section {
 
 a {
 	text-decoration: none;
+}
+
+/* ------------ mode toggler  ----------------- */
+body.dark {
+	background-color: var(--bg-dark);
+} /* #9b59b6 */
+
+body.dark h1,
+body.dark a,
+body.dark p {
+	color: var(--white);
+}
+
+.mode-container {
+	position: fixed;
+	right: 3em;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+body.dark .checkbox-label {
+	background-color: var(--dark-black);
+}
+
+.checkbox-label {
+	background-color: var(--off-white);
+	width: 50px;
+	height: 26px;
+	border-radius: 50px;
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.checkbox-label .ball {
+	background-color: var(--white);
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+	transform: translateX(24px);
 }
 
 /* ------------ Header styles ---------------- */
@@ -47,9 +121,18 @@ a {
 	transform: scale(0.8);
 }
 
+body.dark .rules-container h2 {
+	color: var(--white);
+}
+
 .rules-container h2 {
 	color: var(--black);
 	margin: 1.5em 0;
+}
+
+body.dark .rule-card {
+	/* color: var(--bg-dark); */
+	background-color: var(--black-blue);
 }
 
 .rule-card {
@@ -70,6 +153,10 @@ a {
 	margin-left: 0;
 }
 
+body.dark .rule-number {
+	background: var(--bg-dark);
+}
+
 .rule-number {
 	width: 2.1875em;
 	height: 2.1875em;
@@ -81,6 +168,10 @@ a {
 	margin: 1em 0;
 }
 
+body.dark .rule-card p {
+	color: var(--gray);
+}
+
 .rule-card p {
 	font-size: 0.7em;
 	text-align: left;
@@ -90,6 +181,10 @@ a {
 /* -------------- project cards --------------- */
 .projects-container {
 	display: flex;
+}
+
+body.dark .card {
+	background: var(--black-blue);
 }
 
 .card {
@@ -131,9 +226,17 @@ a {
 	mix-blend-mode: multiply;
 }
 
+body.dark .project-title {
+	color: var(--white);
+}
+
 .project-title {
 	color: var(--black);
 	font-weight: 900;
+}
+
+body.dark .project-description {
+	color: var(--white);
 }
 
 .project-description {
