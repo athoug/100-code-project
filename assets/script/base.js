@@ -33,7 +33,7 @@ function init() {
             <div class="card">
               <div class="project-disc">
                 <div class="card-header">
-                  <div class="icon">
+                  <div class="icon ${JSON_data.projects[i].class}">
                      <img
                       src="${JSON_data.projects[i].source}/images/icon.${
 						JSON_data.projects[i].format

@@ -11,6 +11,7 @@
 			"desc": "a website to display my projects",
 			"source": "./",
 			"blendMode": "multiply",
+			"class": "scale",
 			"tech": [
 				{
 					"name": "HTML",
@@ -23,6 +24,20 @@
 				{
 					"name": "JS",
 					"color": "yellow"
+				}
+			]
+		},
+		{
+			"title": "Test Rotate",
+			"format": "png",
+			"desc": "i just want to see if this works",
+			"source": "./projects/001",
+			"blendMode": "multiply",
+			"class": "rotate",
+			"tech": [
+				{
+					"name": "CSS",
+					"color": "light-blue"
 				}
 			]
 		}
