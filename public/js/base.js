@@ -7,7 +7,7 @@
 function loadJSON(callback) {
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType('application/json');
-	xobj.open('GET', './assets/script/data.json', true);
+	xobj.open('GET', './js/data.json', true);
 	xobj.onreadystatechange = function () {
 		if (xobj.readyState == 4 && xobj.status == '200') {
 			// Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -57,22 +57,6 @@ function init() {
               </div>
             </div>
           </a>`
-
-					// 		`<a href="${JSON_data.art[i].source}" target="_blank">
-					//     <div class="card-container">
-					//       <div class="card-description">
-					//         <p class="card-number">${JSON_data.art[i].number}</p>
-					//         <p class="card-title">${JSON_data.art[i].title}</p>
-					//       </div>
-					//       <div class="card-image">
-					// <img
-					// src="${JSON_data.art[i].source}/thumbnail.${JSON_data.art[i].format}"
-					// alt="art image - ${JSON_data.art[i].title}"
-					// style="mix-blend-mode: ${JSON_data.art[i].blendMode}"
-					// />
-					// 		  </div>
-					//     </div>
-					// </a>`
 				);
 			}
 		}
