@@ -26,34 +26,6 @@
 					"color": "yellow"
 				}
 			]
-		},
-		{
-			"title": "Test Rotate",
-			"format": "png",
-			"desc": "i just want to see if this works",
-			"source": "./projects/001",
-			"blendMode": "multiply",
-			"class": "rotate",
-			"tech": [
-				{
-					"name": "CSS",
-					"color": "light-blue"
-				}
-			]
-		},
-		{
-			"title": "Test Rotate",
-			"format": "png",
-			"desc": "i just want to see if this works",
-			"source": "./projects/001",
-			"blendMode": "multiply",
-			"class": "rotate",
-			"tech": [
-				{
-					"name": "CSS",
-					"color": "light-blue"
-				}
-			]
 		}
 	]
 }
