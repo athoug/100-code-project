@@ -24,6 +24,10 @@
 				{
 					"name": "JS",
 					"color": "yellow"
+				},
+				{
+					"name": "NODE",
+					"color": "green-pill"
 				}
 			]
 		}
