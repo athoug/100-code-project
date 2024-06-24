@@ -1,10 +1,3 @@
-// import * as THREE from './three';
-
-// // to move around the scene we will need to add orbit control
-// import { OrbitControls } from './three/examples/jsm/controls/OrbitControls.js';
-// import { FontLoader } from './three/examples/jsm/loaders/FontLoader.js';
-// import { TextGeometry } from './three/examples/jsm/geometries/TextGeometry.js';
-
 // we need three things in every three project:
 // 1. a scene
 const scene = new THREE.Scene();
@@ -34,9 +27,11 @@ const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 // 2. Load the Earth texture
 const loader = new THREE.TextureLoader();
-const earthTexture = loader.load(`/public/images/earth.jpg`);
-const bumpMap = loader.load(`/public/images/earth-bump-map.jpg`);
-const specularMap = loader.load(`/public/images/earth-specular-map.jpg`);
+const earthTexture = loader.load('/project-public/images/earth.jpg');
+const bumpMap = loader.load('/project-public/images/earth-bump-map.jpg');
+const specularMap = loader.load(
+	'/project-public/images/earth-specular-map.jpg'
+);
 
 scene.position.setZ(3);
 camera.position.setY(3);
@@ -92,7 +87,7 @@ Array(300).fill().forEach(addStar);
 // 7. Add a font to the scene
 const fontLoader = new THREE.FontLoader();
 let textMesh;
-fontLoader.load(`/public/fonts/Karla.json`, (font) => {
+fontLoader.load(`/project-public/fonts/Karla.json`, (font) => {
 	const textGeometry = new THREE.TextGeometry('Hello World!', {
 		font: font,
 		size: 0.25, // Adjust the size of the text

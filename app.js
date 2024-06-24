@@ -13,6 +13,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/src', express.static(path.join(__dirname, 'src')));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use('/projects', express.static(path.join(__dirname, 'src', 'projects')));
+app.use(
+	'/project-public',
+	express.static(path.join(__dirname, 'src/projects/public'))
+);
 
 // route to serve the index.html
 app.get('/', (req, res) => {
