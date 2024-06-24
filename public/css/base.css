@@ -298,6 +298,12 @@ body.dark .project-description {
 	flex-wrap: wrap;
 	flex-basis: 30%;
 	align-content: flex-start;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+
+.pills-container::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 .pill {

@@ -6,10 +6,12 @@
 	"status": "in progress",
 	"projects": [
 		{
+			"id": "001",
 			"title": "This Website",
 			"format": "png",
 			"desc": "a website to display my projects",
 			"source": "./",
+			"image-source": "./projects/",
 			"blendMode": "multiply",
 			"class": "scale",
 			"tech": [
@@ -32,10 +34,12 @@
 			]
 		},
 		{
+			"id": "002",
 			"title": "Hello World",
 			"format": "png",
 			"desc": "a basic hello world but the 3d version",
 			"source": "/projects/day-002",
+			"image-source": "./projects/",
 			"blendMode": "multiply",
 			"class": "scale",
 			"tech": [

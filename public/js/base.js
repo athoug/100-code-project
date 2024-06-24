@@ -35,9 +35,9 @@ function init() {
                 <div class="card-header">
                   <div class="icon ${JSON_data.projects[i].class}">
                      <img
-                      src="${JSON_data.projects[i].source}/images/icon.${
-						JSON_data.projects[i].format
-					}"
+                      src="${JSON_data.projects[i]['image-source']}${
+						JSON_data.projects[i].id
+					}/images/icon.${JSON_data.projects[i].format}"
                       alt="art image - ${JSON_data.projects[i].title}"
                       style="mix-blend-mode: ${JSON_data.projects[i].blendMode}"
 					          />
