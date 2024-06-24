@@ -7,17 +7,8 @@
 		}
 	],
 	"routes": [
-		{
-			"src": "/public/(.*)",
-			"dest": "/public/$1"
-		},
-		{
-			"src": "/src/(.*)",
-			"dest": "/src/$1"
-		},
-		{
-			"src": "/",
-			"dest": "/app.js"
-		}
+		{ "src": "/public/(.*)", "dest": "/public/$1" },
+		{ "src": "/src/(.*)", "dest": "/src/$1" },
+		{ "src": "/(.*)", "dest": "/app.js" }
 	]
 }
