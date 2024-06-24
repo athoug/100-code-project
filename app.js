@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 // middleware to serve static files from public directory and projects
 app.use('/src', express.static(path.join(__dirname, 'src')));
 app.use('/public', express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 app.use('/projects', express.static(path.join(__dirname, 'src', 'projects')));
 
 // route to serve the index.html
