@@ -13,7 +13,7 @@
 			"source": "./",
 			"image-source": "./projects/",
 			"blendMode": "multiply",
-			"class": "scale",
+			"class": "rotate",
 			"tech": [
 				{
 					"name": "HTML",
